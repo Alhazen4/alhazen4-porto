@@ -1,0 +1,54 @@
+div {
+  background-color: aliceblue;
+  width: 100%;
+  height: 100vh;
+
+  &.small {
+    height: 70vh;
+
+    & .row {
+      height: 70vh;
+      margin: 0;
+
+      & .col {
+        background-color: antiquewhite;
+        width: 100%;
+        height: 70vh;
+        padding: 0;
+
+        &.desc {
+          padding-right: 100px;
+        }
+      }
+    }
+
+  }
+
+  &.project {
+    gap: 300px;
+  }
+
+  &.mockup {
+    gap: 200px;
+
+  }
+
+  &.box {
+    background-color: antiquewhite;
+    width: 500px;
+    height: 500px;
+
+    &-small {
+      margin-right: 30px;
+      background-color: aliceblue;
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  &.result {
+    padding: 100px 0 100px 200px;
+  }
+
+
+}

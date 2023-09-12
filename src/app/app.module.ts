@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { WorkComponent } from './components/work/work.component';
+import { ProjectComponent } from './components/project/project.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
-    WorkComponent
+    WorkComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,
