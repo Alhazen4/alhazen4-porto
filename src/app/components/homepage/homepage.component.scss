@@ -50,8 +50,7 @@ nav {
   }
 
   &-color-2 {
-    background: rgb(20, 20, 22);
-    background: linear-gradient(180deg, rgba(20, 20, 22, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    background: #2d2c2f;
     width: 100px;
     height: 550px;
     border-radius: 10px;
@@ -68,7 +67,7 @@ nav {
       margin-right: 50px;
       width: 500px;
       height: 550px;
-      background-color: rgb(20, 20, 22);
+      background: #2d2c2f;
       border-radius: 20px;
 
       & p {
