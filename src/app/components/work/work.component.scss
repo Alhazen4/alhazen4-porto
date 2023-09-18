@@ -1,3 +1,14 @@
+html {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.section {
+  transition: 0.5s;
+  scroll-snap-align: start;
+}
+
 .div {
   width: 100%;
   height: 100vh;
@@ -17,7 +28,7 @@
 
   &-content {
     width: 100%;
-    height: 100vh;
+    height: 85vh;
     padding: 0 200px;
   }
 
@@ -53,6 +64,10 @@
       margin-right: 100px;
       width: 500px;
       height: 550px;
+
+      & h3 {
+        margin-bottom: 30px;
+      }
     }
   }
 
@@ -71,7 +86,10 @@
       }
     }
   }
+}
 
+.button-view {
+  margin-bottom: 11vh;
 }
 
 .box {
