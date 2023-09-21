@@ -1,26 +1,42 @@
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+
+app-navbar {
+  background-color: black;
+}
+
 div {
   width: 100%;
   height: 100vh;
 
-  &.div-1 {
-    background-color: aliceblue;
-  }
-
   &.image {
-    background-color: antiquewhite;
     width: 150px;
     height: 150px;
+    border-radius: 20px;
+
+    & img {
+      border-radius: 20px;
+      width: 150px;
+      height: 150px;
+    }
 
     &-point {
-      background-color: antiquewhite;
       width: 25px;
       height: 25px;
+
+      & h3 {
+        line-height: 1px;
+      }
     }
 
     &-2 {
-      background-color: antiquewhite;
       width: 500px;
       height: 500px;
+
+      & img {
+        border-radius: 20px;
+        width: 500px;
+        height: 500px;
+      }
     }
   }
 
