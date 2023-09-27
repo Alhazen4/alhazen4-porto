@@ -8,24 +8,26 @@
 </head>
 
 <body>
-  <div class="project d-flex flex-row align-items-center justify-content-center">
-    <span>
-      <h3>Project Name</h3>
-      <h5>Full stack Developer</h5>
-      <p>1 weeks</p>
+  <div class="project d-flex flex-row align-items-center justify-content-center" [style.background]="projectBgColor">
+    <span style="color: white;">
+      <h3>{{ projectName }}</h3>
+      <h5>{{ projectPosition }}</h5>
+      <p>{{ projectDuration }}</p>
     </span>
-    <div style="background-color: antiquewhite; width: 500px; height: 500px;"></div>
+    <div style="width: 500px; height: 500px;" class="d-flex flex-row align-items-center justify-content-center">
+      <img [src]="projectLogo" alt="">
+    </div>
   </div>
 
   <div class="small">
     <div class="row">
       <div class="col d-flex flex-row align-items-center justify-content-center">
-        Project Description
+        <h3>
+          Project Description
+        </h3>
       </div>
       <div class="col desc d-flex flex-row align-items-center justify-content-center">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed sapiente doloremque voluptate. Perspiciatis cum
-        incidunt corporis recusandae harum perferendis ducimus quod voluptates placeat, aliquid nihil cupiditate fugit
-        non illum atque.
+        {{ projectDescription }}
       </div>
     </div>
   </div>
@@ -38,7 +40,9 @@
   <div class="small">
     <div class="row">
       <div class="col d-flex flex-row align-items-center justify-content-center">
-        Project Technology
+        <h3>
+          Project Technology
+        </h3>
       </div>
       <div class="col desc d-flex flex-row align-items-center justify-content-center">
         <div class="box-small"></div>
@@ -49,7 +53,7 @@
   </div>
 
   <div class="result">
-    <h2>Project Result</h2>
+    <h3>Project Result</h3>
   </div>
 </body>
 
