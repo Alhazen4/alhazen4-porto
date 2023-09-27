@@ -15,6 +15,11 @@ export class ProjectComponent {
   projectDescription: string | null | undefined;
   projectLogo: string | null | undefined;
   projectBgColor: string | null | undefined;
+
+  projectTechLogo1: string | null | undefined;
+  projectTechLogo2: string | null | undefined;
+  projectTechLogo3: string | null | undefined;
+  projectTechLogo4: string | null | undefined;
   
   constructor(private route: ActivatedRoute) {}
 
@@ -33,6 +38,11 @@ export class ProjectComponent {
           this.projectDescription = element.projectDescription;
           this.projectLogo = '../../../assets/' + element.projectLogo;
           this.projectBgColor = element.projectBgColor;
+
+          this.projectTechLogo1 = '../../../assets/logo/' + element!.projectTechLogo![0];
+          this.projectTechLogo2 = '../../../assets/logo/' + element!.projectTechLogo![1];
+          this.projectTechLogo3 = '../../../assets/logo/' + element!.projectTechLogo![2];
+          this.projectTechLogo4 = '../../../assets/logo/' + element!.projectTechLogo![3];
         }
     });
     

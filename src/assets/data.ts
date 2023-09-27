@@ -6,7 +6,8 @@ export const projects = [
       projectDuration: '3 Months',
       projectDescription: 'Create an application for data collection on packages that come to the office by designing both the frontend and database',
       projectLogo: 'levelup_logo.png',
-      projectBgColor: 'linear-gradient(180deg, rgba(54, 96, 174, 1) 0%, rgba(193, 76, 152, 1) 100%)'
+      projectBgColor: 'linear-gradient(180deg, rgba(54, 96, 174, 1) 0%, rgba(193, 76, 152, 1) 100%)',
+      projectTechLogo: ['vue.png', 'nodejs.png', 'expressjs.png', 'mysql.png']
     },
     { id: 2, name: 'Dr. Nice' },
     { id: 3, name: 'Bombasto' },

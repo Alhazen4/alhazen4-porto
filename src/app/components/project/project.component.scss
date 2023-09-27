@@ -3,7 +3,7 @@ div {
   height: 100vh;
 
   &.small {
-    height: 70vh;
+    height: 35vh;
 
     & .row {
       height: 70vh;
@@ -15,7 +15,16 @@ div {
         padding: 0;
 
         &.desc {
+          font-size: 20px;
           padding-right: 100px;
+
+          &-tech {
+            padding-right: 100px;
+
+            img {
+              width: 100%;
+            }
+          }
         }
       }
     }
@@ -36,13 +45,11 @@ div {
   }
 
   &.box {
-    background-color: antiquewhite;
     width: 500px;
     height: 500px;
 
     &-small {
       margin-right: 30px;
-      background-color: aliceblue;
       width: 150px;
       height: 150px;
     }
@@ -50,6 +57,20 @@ div {
 
   &.result {
     padding: 100px 0 100px 235px;
+
+    & h3 {
+      margin-bottom: 50px;
+    }
+
+    &-img {
+      width: 90%;
+      height: 70%;
+
+      img {
+        width: 30%;
+        object-fit: cover;
+      }
+    }
   }
 
 
