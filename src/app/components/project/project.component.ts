@@ -21,6 +21,10 @@ export class ProjectComponent {
   projectTechLogo3: string | null | undefined;
   projectTechLogo4: string | null | undefined;
   
+  projectResult1: string | null | undefined;
+  projectResult2: string | null | undefined;
+  projectResult3: string | null | undefined;
+  
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
@@ -43,6 +47,10 @@ export class ProjectComponent {
           this.projectTechLogo2 = '../../../assets/logo/' + element!.projectTechLogo![1];
           this.projectTechLogo3 = '../../../assets/logo/' + element!.projectTechLogo![2];
           this.projectTechLogo4 = '../../../assets/logo/' + element!.projectTechLogo![3];
+
+          this.projectResult1 = '../../../assets/' + element!.projectResult![0];
+          this.projectResult2 = '../../../assets/' + element!.projectResult![1];
+          this.projectResult3 = '../../../assets/' + element!.projectResult![2];
         }
     });
     

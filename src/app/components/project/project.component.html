@@ -7,6 +7,8 @@
   <title>Document</title>
 </head>
 
+<app-navbar></app-navbar>
+
 <body>
   <div class="project d-flex flex-row align-items-center justify-content-center" [style.background]="projectBgColor">
     <span style="color: white;">
@@ -60,10 +62,10 @@
 
   <div class="result">
     <h3>Project Result</h3>
-    <div class="result-img d-flex flex-row gap-5">
-      <img src="../../../assets/bg.jpg" alt="">
-      <img src="../../../assets/bg.jpg" alt="">
-      <img src="../../../assets/bg.jpg" alt="">
+    <div class="result-img d-flex flex-column gap-5">
+      <img [src]="projectResult1" alt="...">
+      <img [src]="projectResult2" alt="...">
+      <img [src]="projectResult3" alt="...">
     </div>
   </div>
 

@@ -56,6 +56,7 @@ div {
   }
 
   &.result {
+    height: 100%;
     padding: 100px 0 100px 235px;
 
     & h3 {
@@ -67,7 +68,8 @@ div {
       height: 70%;
 
       img {
-        width: 30%;
+        border-radius: 20px;
+        width: 100%;
         object-fit: cover;
       }
     }
