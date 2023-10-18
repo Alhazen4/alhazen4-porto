@@ -7,16 +7,16 @@
   <title>Document</title>
 </head>
 
-<app-navbar></app-navbar>
+<app-navbar [textColor]=navTextColor></app-navbar>
 
 <body>
-  <div class="div home-cover d-flex align-items-center justify-content-center" style="background-color: aliceblue;">
+  <div class="section div home-cover d-flex align-items-center justify-content-center">
     <h3>Front-end Developer</h3>
     <div class="overlay"></div>
     <img src="../../../assets/bg.jpg" alt="">
   </div>
 
-  <div class="div d-flex align-items-center">
+  <div id="content" class="section div d-flex align-items-center">
     <div class="div-content d-flex flex-row">
       <div class="div-color-1"></div>
       <div class="div-cover-1 d-flex align-items-center justify-content-center">
@@ -32,7 +32,7 @@
     </div>
   </div>
 
-  <div class="div d-flex align-items-center">
+  <div id="content" class="section div d-flex align-items-center">
     <div class="div-content d-flex flex-row justify-content-end">
       <div class="div-text-flip d-flex align-items-start justify-content-center flex-column gap-2">
         <h3>BCA IT Intern</h3>
@@ -51,7 +51,7 @@
     </div>
   </div>
 
-  <div class="div d-flex align-items-center">
+  <div id="content" class="section div d-flex align-items-center">
     <div class="div-content d-flex flex-row">
       <div class="div-color-3"></div>
       <div class="div-cover-3 d-flex align-items-center justify-content-center">
@@ -66,17 +66,22 @@
     </div>
   </div>
 
-  <div class="div-footer d-flex align-items-center">
+  <div class="section div-footer d-flex align-items-center">
     <div>
       <h1>Thank you for viewing my portfolio!</h1>
       <div class="d-flex flex-row gap-5">
         <div>
           <h3>Contact Me</h3>
-          <p>aziziardi7@gmail.com</p>
+          <a class="mail" href="mailto:aziziardi7@gmail.com">aziziardi7@gmail.com</a>
         </div>
         <div>
           <h3>Let's Connect</h3>
-          <p>LinkedIn | Instagram | Resume</p>
+          <span class="connect">
+            <a href="linkedin.com/in/lazuardi-muhammad-azizi-56971b234">LinkedIn </a>
+            <a>|</a>
+            <a href="https://docs.google.com/document/d/1iDsEPli5rWn5UDKiLmAdSU-FTdXV_pGtijdDzTUtNA0/edit?usp=sharing">
+              Resume</a>
+          </span>
         </div>
       </div>
       <div class="div-copyright">
