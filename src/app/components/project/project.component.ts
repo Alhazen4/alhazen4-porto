@@ -10,6 +10,7 @@ import { projects } from '../../../assets/data';
 export class ProjectComponent {
   id: string | null | undefined;
   projectName: string | null | undefined;
+  projectCompany: string | null | undefined;
   projectPosition: string | null | undefined;
   projectDuration: string | null | undefined;
   projectDescription: string | null | undefined;
@@ -36,6 +37,7 @@ export class ProjectComponent {
     projects.forEach(element => {
       
       if (element.id === parseInt(id)) {
+          this.projectCompany = element.projectCompany;
           this.projectName = element.projectName;
           this.projectPosition = element.projectPosition;
           this.projectDuration = element.projectDuration;

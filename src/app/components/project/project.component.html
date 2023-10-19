@@ -12,11 +12,12 @@
 <body>
   <div class="project d-flex flex-row align-items-center justify-content-center" [style.background]="projectBgColor">
     <span style="color: white;">
+      <h1>{{ projectCompany }}</h1>
       <h3>{{ projectName }}</h3>
       <h5>{{ projectPosition }}</h5>
       <p>{{ projectDuration }}</p>
     </span>
-    <div style="width: 500px; height: 500px;" class="d-flex flex-row align-items-center justify-content-center">
+    <div style="width: 30%;" class="d-flex flex-row align-items-center justify-content-center">
       <img [src]="projectLogo" alt="">
     </div>
   </div>

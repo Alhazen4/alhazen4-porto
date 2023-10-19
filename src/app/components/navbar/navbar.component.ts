@@ -7,13 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class NavbarComponent {
   @Input() textColor: string | any;
-
-  ngOnInit() {
-    console.log(this.textColor);
-  }
-  
-  ngOnChange() {
-    console.log(this.textColor);
-  }
   
 }
